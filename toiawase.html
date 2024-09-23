@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>商品選択フォーム</title>
+
+<style>
+    body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        margin: 0;
+    }
+    form {
+        background-color: #000000;
+        padding: 20px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    select, input[type="submit"], input[type="reset"] {
+        background-color: #333333;
+        color: #ffffff;
+        border: none;
+        padding: 5px;
+        margin-top: 5px;
+        width: calc(100% - 16px);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .glow-text {
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        }
+        to {
+            text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+        }
+    }
+</style>
+
+<style>
+    .animated-text {
+        white-space: nowrap; 
+        overflow: hidden; 
+        animation: slide-in 20s linear infinite; 
+    }
+
+    @keyframes slide-in {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<form action="index_i.html" method="post">
+    <p><span class="glow-text">エッセンシャルを選択してください</span></p>
+    
+    <p>
+        初期状態<br/>
+        <select name="reason1">
+            <option value="bara">商品選択</option>
+            <option value="dama">ダマスクローズ</option>
+            <option value="maguniriya">マグノリア</option>
+            <option value="pepamint">ペパーミント</option>
+            <option value="furankinses">フランキンセンス</option>
+            <option value="lavender">ラベンダー</option>
+            <option value="orenji">オレンジ</option>
+            <option value="teatree">ティートゥリー</option>
+        </select>
+    </p>
+
+    <input type="submit" value="送信">
+    <input type="reset" value="リセット">
+</form>
+
+</body>
+</html>

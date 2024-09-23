@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ようこそ花の世界へ～</title>
+<center>
+<body bgcolor="#111111">
+
+
+<h1 style="color: gold;">ようこそ私のホームページへ～！</h1>
+</body>
+</center>
+<style>
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #000000;
+    border: 5px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.popup.show {
+    opacity: 1; 
+}
+</style>
+</head>
+<body>
+
+<!-- Popup content -->
+<div id="popup" class="popup">
+    <img src="images/sora.jpg" alt="Popup Image">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var popup = document.getElementById('popup');
+
+    // Display popup immediately when the page is loaded
+    popup.classList.add('show');
+
+    // Close popup and redirect smoothly after 2 seconds
+    setTimeout(function() {
+        // Fade out the popup smoothly
+        popup.style.opacity = '0';
+
+        // Redirect after a short delay for smoother transition
+        setTimeout(function() {
+            window.location.href = 'index_i.html';
+        }, 2000); // 0.5秒後に遷移するように調整
+    }, 3000); // ポップアップ表示後2秒後に非表示にする
+});
+</script>
+
+</body>
+</html>

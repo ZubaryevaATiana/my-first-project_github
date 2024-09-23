@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slideshow</title>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        .animated-text {
+            white-space: nowrap; 
+            overflow: hidden; 
+            animation: slide-in 20s linear infinite; 
+        }
+
+       
+        @keyframes slide-in {
+            0% {
+                transform: translateX(100%); 
+            }
+            
+            90% 
+            transform: translateX(100%); 
+            100% {
+                transform: translateX(-100%); 
+            }
+        }
+    </style>
+    <title>Right-to-Left Slowly Flowing Text</title>
+</head>
+<body>
+   
+    <div class="animated-text">
+    <p>
+    <font color="#ffffff">
+       エッセンシャルオイルを定期的に使用することによって効果が高まります🌸🌸🌸
+    </font>
+    </p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<style>
+.slideshow {
+  max-width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 80%;
+  height: auto;
+  display: none;
+}
+
+</style>
+</head>
+<body bgcolor="#033340">
+<center>
+<div class="slideshow">
+  <img src="images/pepaminto.jpg" alt="Image 1">
+  <img src="images/ylang.jpg" alt="Image 2">
+  <img src="images/lavender.jpg" alt="Image 3">
+  <img src="images/herb_magnolia-flower-02.jpg" alt="Image 4">
+  <img src="images/bara.jpg" alt="Image 5">
+  <img src="images/bara.jpg" alt="Image 5">
+  <img src="images/bara.jpg" alt="Image 5">
+  <img src="images/damasuka.jpg." alt="Image 5">
+  
+  
+  
+</div>
+</center>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var slides = document.querySelectorAll('.slideshow img');
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // 6 seconds
+}
+</script>
+
+<body>
+<div align="center">
+    <a href="index_i.html">ホームへ戻る</a>
+</div>
+
+
+
+
+<style>
+
+/* ボタンのスタイル */
+#nextButton {
+    position: fixed; /* ボタンを固定位置に配置 */
+    bottom: 20px; /* 下端からの距離 */
+    right: 20px; /* 右端からの距離 */
+    padding: 10px 20px; /* パディング */
+    font-size: 16px; /* フォントサイズ */
+    background-color: #cc99ff; /* 背景色 */
+    color: #fff; /* テキスト色 */
+    border: none; /* ボーダーなし */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    border-radius: 5px; /* 角丸 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* ドロップシャドウ */
+}
+
+#nextButton:hover {
+    background-color: #990033; /* ホバー時の背景色 */
+}
+</style>
+</head>
+<body>
+
+<!-- ボタン要素 -->
+<button id="nextButton">Next</button>
+
+<script>
+// ボタン要素を取得する
+const nextButton = document.getElementById('nextButton');
+
+// ボタンにクリックイベントを追加する
+nextButton.addEventListener('click', function() {
+    // ここに次の処理を記述する
+    // 例えば、次のページに遷移する場合は以下のようにする
+    window.location.href = "about.html";
+});
+
+
+</script>
+
+
+</body>
+</html>

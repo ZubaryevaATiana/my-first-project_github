@@ -1,0 +1,61 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ティートゥリーの効果について</title>
+    <body bgcolor="#99cc99">
+    <center>
+    ティートゥリーの効果について
+    </center>
+    </body>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+        .frame {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .frame:hover {
+            transform: rotate(20deg);
+        }
+    </style>
+    <script>
+        // JavaScript for additional animation
+        window.onload = function() {
+            var image = document.getElementById("teatree-image");
+            image.onmouseover = function() {
+                this.style.transform = "rotate(-20deg)";
+            }
+            image.onmouseout = function() {
+                this.style.transform = "rotate(0deg)";
+            }
+        }
+    </script>
+</head>
+<body>
+<center>
+ティートゥリーは殺菌効果があります,<br>
+朝起きた時に足の裏に一滴くらいをてらして、<br>軽くこすって、心身を元気にさせます～</center>
+<table border="0" align="center" cellpadding="5" cellspacing="5" width="500">
+    <tr>
+        <td align="center">
+            <img src="images/teatree.jpg" alt="ティートゥリーの写真" width="350" height="350" id="teatree-image" class="frame" border="5">
+        </td>
+    </tr>
+</table>
+
+
+
+<p style="text-align: center;">
+    <a href="index_i.html">ホームへ戻る</a>
+</p>
+
+</body>
+</html>
+
+
+
+
+

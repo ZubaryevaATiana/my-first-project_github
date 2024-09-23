@@ -1,0 +1,61 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>オレンジーの効果について</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            color: white;
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border: 0;
+            margin: auto;
+            width: 500px;
+        }
+        img.frame {
+            border: 3px solid #FFFFFF; /* Adjust border color */
+            cursor: pointer;
+            transition: transform 0.3s ease; /* Smooth transition for transform */
+        }
+        img.frame:hover {
+            transform: scale(1.1); /* Scale up the image on hover */
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function enlargeImage() {
+            var img = document.getElementById('orenjiImg');
+            img.style.transform = 'scale(1.2)'; // Enlarge the image by 20%
+        }
+    </script>
+</head>
+<body>
+
+<table border="0" align="center" cellpadding="5" cellspacing="5">
+    <tr>
+        <td align="center">
+            <img id="orenjiImg" src="images/oreng.jpg" onclick="enlargeImage();" width="250" height="250" class="frame">
+        </td>
+    </tr>
+</table>
+
+<div class="center">
+    <h1>オレンジーの効果について</h1>
+    <p>心身を元気にさせてくれるオレンジは朝、昼におすすめします。<br>
+    また、ラベンダーとの組み合わせでリラックス効果を得ることができますので寝る前に使えます～！</p>
+</div>
+
+<div class="center">
+    <a href="index_i.html">ホームへ戻る</a>
+</div>
+
+</body>
+</html>
+
+

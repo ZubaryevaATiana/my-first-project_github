@@ -1,0 +1,61 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>イランイランの効果について</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  .frame {
+    transition: transform 0.3s ease;
+  }
+
+  .frame:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+<body LINK="#FF8C00" VLINK=green TEXT="white" bgcolor="000000">
+
+<table border="0" align="center" cellpadding="5" cellspacing="5" width="500">
+<tr>
+<td align="center">
+<img id="mainImg" src="images/iraniran.jpg" alt="イランイランの写真" width="350" height="350" class="frame" border="5">
+</td>
+</tr>
+
+<tr>
+<td>
+<div align="center"><strong></strong></div>
+<center>リラックス効果のあるイランイランは<br>寝る前におすすめします～<br>
+ラベンダーとの組み合わせがさらに効果的です</center>
+</td>
+</tr>
+</table>
+<center>
+<a href="index_i.html">ホームへ戻る</a>
+</center>
+
+<script>
+  // 別の写真のURL
+  var secondImgUrl = "images/lavender.jpg";
+  
+  // マウスが写真に触れたときの処理
+  document.getElementById("mainImg").addEventListener("mouseenter", function() {
+    // 別の写真に変更
+    document.getElementById("mainImg").src = secondImgUrl;
+  });
+
+  // マウスが写真から離れたときの処理
+  document.getElementById("mainImg").addEventListener("mouseleave", function() {
+    // 元の写真に戻す
+    document.getElementById("mainImg").src = "images/iraniran.jpg";
+  });
+</script>
+
+</body>
+</html>
+
