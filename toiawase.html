@@ -63,6 +63,22 @@
             transform: translateX(-100%);
         }
     }
+
+     @media (max-width: 600px) {
+            h1 {
+                font-size: 24px; /* モバイル用のフォントサイズ */
+            }
+
+            .popup {
+                width: 90%; /* ポップアップの幅を画面サイズに合わせる */
+                padding: 10px; /* モバイル用のパディング */
+            }
+
+            img {
+                width: 100%; /* 画像をポップアップ内で全幅表示 */
+                height: auto; /* アスペクト比を維持 */
+            }
+        }
 </style>
 
 </head>
